@@ -33,7 +33,17 @@ let MeigreValidator = {
                         }
                     break
                     case 'min':
-
+                        if(input.value.length < rulesDetails[1]) {
+                            return 'Este campo precisa de pelo menos '+rulesDetails[1]+' caracteres'
+                        }
+                    break
+                    case 'email':
+                        if(input.value != '') {
+                            let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                            if(!regex.test(input.value.toLowerCase())) {
+                                return 'Campo de email inválido'
+                            }
+                        }
                     break
                 }
             }

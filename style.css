@@ -15,7 +15,7 @@ body {
 }
 .rightside {
     width: 400px;
-    background-color: #DDD;
+    background: linear-gradient(#eefaff75, #bbeaff76);
     padding: 50px;
 }
 .rightside label {
@@ -29,6 +29,10 @@ body {
     padding: 8px;
     font-size: 14px;
     outline: 0;
+}
+#register:hover {
+    background-color: #dfdfdf;
+}
 }
 .error {
     font-size: 11px;

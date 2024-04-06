@@ -14,21 +14,21 @@
         <div class="rightside">
             <h1>Crie uma conta</h1>
 
-            <form method="post" action="cadastro.php" class="meigrevalidator">
+            <form method="post" action="cadastro.php" class="meigrevalidator"> <!--Validation Class-->
                 <label>
                     Seu nome: <br>
-                    <input type="text" name="name" data-rules="required|min=4">
+                    <input type="text" name="name" data-rules="required|min=4"> <!--Rules-->
                 </label>
                 <label>
                     Seu email: <br>
-                    <input type="text" name="email" data-rules="required">
+                    <input type="text" name="email" data-rules="required|email">
                 </label>
                 <label>
                     Sua senha: <br>
-                    <input type="password" name="password" data-rules="required">
+                    <input type="password" name="password" data-rules="min=6">
                 </label>
                 <label>
-                    <input type="submit" value="Cadastrar">
+                    <input type="submit" value="Cadastrar" id="register">
                 </label>
             </form>
 
