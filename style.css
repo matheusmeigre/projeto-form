@@ -30,8 +30,11 @@ body {
     font-size: 14px;
     outline: 0;
 }
-#register:hover {
+.register:hover {
     background-color: #dfdfdf;
+}
+.register:active {
+    background-color: #d4d1d1d6;
 }
 .error {
     font-size: 11px;
